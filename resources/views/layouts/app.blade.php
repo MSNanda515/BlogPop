@@ -33,7 +33,7 @@
       
       @guest
       <li>
-        <a href="" class="p-3">LogIn</a>
+        <a href=" {{ route('login') }}" class="p-3">LogIn</a>
       </li>
       <li>
         <a href="{{ route('register') }}" class="p-3">Register</a>
