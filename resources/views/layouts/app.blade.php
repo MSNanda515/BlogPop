@@ -17,17 +17,20 @@
         <a href="" class="p-3">Dashboard</a>
       </li>
       <li>
-        <a href="" class="p-3">Post</a>
+        <a href="{{ route('posts') }}" class="p-3">Post</a>
       </li>
     </ul>
     <ul class="flex items-center">
       {{-- @if(auth()->user()) --}}
       @auth
       <li>
-        <a href="" class="p-3">MSN</a>
+        <a href="" class="p-3">{{ auth()->user()->name }}</a>
       </li>
       <li>
-        <a href="" class="p-3">Logout</a>
+        <form action="{{ route('logout') }}" method="POST" class="inline p-3">
+          @csrf
+          <button type="submit">Logout</button>
+        </form>
       </li>
       @endauth
       
