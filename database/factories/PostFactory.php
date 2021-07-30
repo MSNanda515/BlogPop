@@ -22,7 +22,8 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            //
+            // Generate the demo data using the factory
+            'body' =>$this->faker->sentence(20),
         ];
     }
 }
