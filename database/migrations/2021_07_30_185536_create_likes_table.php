@@ -15,6 +15,9 @@ class CreateLikesTable extends Migration
     {
         Schema::create('likes', function (Blueprint $table) {
             $table->id();
+            // Cascaded so that all the user's likes are deleted if the user is deleted and so son
+            $table->foreignId('user_id')->constrained()->onDelete('cascade'); 
+            $table->foreignId('post_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
