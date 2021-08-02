@@ -14,3 +14,9 @@ This sets up the website running on the localhost most likely using the port 800
 ## Motivation
 The main intention behind developing this project was to learn the PHP laravel framwork to develop full stack dynamic websites. Moreover, I wanted to develop a project that had a proper backend database and this application uses PostgreSQL database with multiple models and relationships between various models which is why I decided to work on this project. 
 
+## Requirements
+- The user should be able to sign up and login using Email
+- Each form should have cross-site request forgery protection
+- The user should be able to view posts
+- Only authenticated users should be able to post and like/unlike posts
+- An authenticated user should be able to like a post only once
