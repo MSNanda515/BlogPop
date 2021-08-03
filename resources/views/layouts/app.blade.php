@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BlogPop</title>
-  <link rel="stylesheet" href="{{ asset('css/app.css') }}"
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
 </head>
 <body class="bg-gray-200">
   <nav class="p-6 bg-white flex justify-between mb-6">
@@ -14,7 +14,7 @@
         <a href="" class="p-3">Home</a>
       </li>
       <li>
-        <a href="" class="p-3">Dashboard</a>
+        <a href="{{ route('dashboard') }}" class="p-3">Dashboard</a>
       </li>
       <li>
         <a href="{{ route('posts') }}" class="p-3">Post</a>
