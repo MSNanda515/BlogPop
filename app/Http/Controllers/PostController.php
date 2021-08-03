@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    public function __contruct(){
+        // define middleware
+        $this->middleware(['auth'])->only(['store', 'destroy']);
+    }
+
     public function index() {
         $posts = Post::orderBy('created_at', 'desc')->with(['user', 'likes'])->paginate(20); // Eager loading the data to reduce the no of queries
         return view('posts.index', [
