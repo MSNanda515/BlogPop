@@ -17,6 +17,8 @@ The main intention behind developing this project was to learn the PHP laravel f
 ## Requirements
 - The user should be able to sign up and login using Email
 - Each form should have cross-site request forgery protection
-- The user should be able to view posts
+- An unauthenticated user should be able to view posts without the ability to like and unlike posts
 - Only authenticated users should be able to post and like/unlike posts
 - An authenticated user should be able to like a post only once
+- A user should be able to delete the posts contributed by them
+
